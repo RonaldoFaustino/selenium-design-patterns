@@ -18,9 +18,9 @@ public class SearchSuggestion extends AbstractComponent{
     private List<WebElement> susggestions;
 
 
-    public SearchSuggestion(final WebDriverWait driver){
-        this.wait = new WebDriverWait((WebDriver) driver, Duration.ofSeconds(20));
-        PageFactory.initElements((SearchContext) driver, this);
+    public SearchSuggestion(final WebDriver driver){
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        PageFactory.initElements(driver, this);
     }
 
     public void clickSusggestionByIndex(int index){
