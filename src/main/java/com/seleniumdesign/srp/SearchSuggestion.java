@@ -28,8 +28,8 @@ public class SearchSuggestion extends AbstractComponent{
     }
 
     @Override
-    public boolean isDisplayed() {
-        return false;
+    public boolean isDisplayed(){
+        return this.wait.until(driver -> this.susggestions.size() > 5);
     }
 
     @Override
