@@ -12,15 +12,12 @@ import java.util.List;
 
 public class SearchSuggestion extends AbstractComponent{
 
-    private WebDriverWait wait;
-
     @FindBy(css = "li.sbct")
     private List<WebElement> susggestions;
 
 
     public SearchSuggestion(final WebDriver driver){
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
     public void clickSusggestionByIndex(int index){
@@ -28,7 +25,7 @@ public class SearchSuggestion extends AbstractComponent{
     }
 
     @Override
-    public boolean isDisplayed(){
+    public boolean isDisplayed() {
         return this.wait.until(driver -> this.susggestions.size() > 5);
     }
 
