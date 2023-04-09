@@ -12,7 +12,7 @@ public class NavegationBar extends AbstractComponent{
     @FindBy(linkText = "Imagens")
     private WebElement imagens;
 
-    @FindBy(linkText = "Noticias")
+    @FindBy(linkText = "Notícias")
     private WebElement noticias;
 
     public NavegationBar(WebDriver driver) {

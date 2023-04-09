@@ -20,7 +20,7 @@ public class SearchWidget extends AbstractComponent{
 
     @Override
     public boolean isDisplayed() {
-        return false;
+        return this.wait.until((d) -> this.searchBox.isDisplayed());
     }
 
     @Override

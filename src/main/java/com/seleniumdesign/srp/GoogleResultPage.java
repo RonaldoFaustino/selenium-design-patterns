@@ -25,8 +25,8 @@ public class GoogleResultPage {
         return searchSuggestion;
     }
 
-    NavegationBar getNavegationBar(){
-        return getNavegationBar();
+    public NavegationBar getNavegationBar(){
+        return navegationBar;
     }
 
     ResultStat getResultStat(){
