@@ -1,5 +1,7 @@
-package com.seleniumdesign.srp;
+package com.seleniumdesign.srp.result;
 
+import com.seleniumdesign.srp.common.SearchSuggestion;
+import com.seleniumdesign.srp.common.SearchWidget;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -8,7 +10,7 @@ public class GoogleResultPage {
     private SearchWidget searchWidget;
     private SearchSuggestion searchSuggestion;
     private NavegationBar navegationBar;
-    private ResultStat  resultStat;
+    private ResultStat resultStat;
 
     public GoogleResultPage (final WebDriver driver){
         this.searchWidget = new SearchWidget(driver);
@@ -17,11 +19,11 @@ public class GoogleResultPage {
         this.resultStat = PageFactory.initElements(driver, ResultStat.class);
     }
 
-    SearchWidget getSearchWidget(){
+    public SearchWidget getSearchWidget(){
         return searchWidget;
     }
 
-    SearchSuggestion getSearchSuggestion(){
+    public SearchSuggestion getSearchSuggestion(){
         return searchSuggestion;
     }
 
@@ -29,7 +31,7 @@ public class GoogleResultPage {
         return navegationBar;
     }
 
-    ResultStat getResultStat(){
+    public ResultStat getResultStat(){
         return resultStat;
     }
 }
