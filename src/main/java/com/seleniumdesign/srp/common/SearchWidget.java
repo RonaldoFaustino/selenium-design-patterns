@@ -1,7 +1,6 @@
 package com.seleniumdesign.srp.common;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.seleniumdesign.srp.common.AbstractComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

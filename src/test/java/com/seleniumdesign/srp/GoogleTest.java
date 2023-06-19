@@ -1,10 +1,10 @@
 package com.seleniumdesign.srp;
 
-import com.seleniumdesign.Base;
-import com.seleniumdesign.srp.common.SearchSuggestion;
 import com.seleniumdesign.srp.common.SearchWidget;
 import com.seleniumdesign.srp.main.GoogleMainPage;
 import com.seleniumdesign.srp.result.GoogleResultPage;
+import com.seleniumdesign.srp.common.SearchSuggestion;
+import com.seleniumdesign.Base;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
